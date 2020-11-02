@@ -6,7 +6,7 @@ let paths = document.querySelectorAll('.land');
 departements.forEach((element) => {
 
     const mag = magasins.filter((elem) => {
-        return elem.id === element.num_dep;
+        return elem.id === element.num_dep && elem.public;
     });
     if (mag.length > 0) {
         let path = document.getElementById(`region-${element.num_dep}`);
@@ -24,7 +24,7 @@ paths.forEach((path) => {
 
         let regionNumber = e.target.id.replace('region-', '');
         const mag = magasins.filter((element) => {
-            return element.id === regionNumber;
+            return element.id === regionNumber && element.public;
         });
         if (mag) {
             if (mag.length > 0) {
