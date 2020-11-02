@@ -7,7 +7,7 @@ transition:fill 0.3s;
 }
 
 .map__image path:hover {
-    fill : blue;
+    fill : #ff5722  ;
     stroke: #ffffff;
     stroke-width: 2px;
     

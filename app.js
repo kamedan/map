@@ -11,7 +11,7 @@ departements.forEach((element) => {
     if (mag.length > 0) {
         let path = document.getElementById(`region-${element.num_dep}`);
 
-        path.style.fill = '#00008B';
+        path.style.fill = '#2a3089';
     }
 });
 
@@ -64,12 +64,12 @@ paths.forEach((path) => {
                     a.style.fontWeight = 'bold';
                     a.style.paddingBottom = '5px';
                     a.style.paddingTop = '5px';
-                    a.style.backgroundColor = 'cyan';
+                    a.style.backgroundColor = '#fafafa';
                     a.style.borderRadius = '5px';
                     a.style.margin = '5px';
                     a.style.fontSize = '17px';
                     a.style.display = 'block';
-                    a.style.color = 'mediumslateblue';
+                    a.style.color = '#2a3089';
                     a.style.fontFamily = "verdana";
                     div.appendChild(a);
 
