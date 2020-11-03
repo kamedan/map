@@ -50,10 +50,11 @@ paths.forEach((path) => {
                 h1.textContent = dep[0].num_dep + ' | ' + dep[0].dep_name;
                 h1.style.margin = '0';
                 h1.style.color = 'purple';
+                h1.style.fontFamily = "arial";
                 if(window.matchMedia("(max-width: 500px)").matches){
                     h1.style.fontSize = '10px';
                 }else{
-                    h1.style.fontSize = '17px';
+                    h1.style.fontSize = '15px';
                 }
                 div.appendChild(h1);
                 var hr = document.createElement('hr');
@@ -75,12 +76,12 @@ paths.forEach((path) => {
                     if(window.matchMedia("(max-width: 500px)").matches){
                         a.style.fontSize = '10px';
                     }else{
-                        a.style.fontSize = '17px';
+                        a.style.fontSize = '15px';
                     }
                     
                     a.style.display = 'block';
                     a.style.color = '#2a3089';
-                    a.style.fontFamily = "verdana";
+                    a.style.fontFamily = "arial";
                     div.appendChild(a);
 
                 });
